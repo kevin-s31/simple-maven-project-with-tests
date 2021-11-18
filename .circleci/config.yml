@@ -18,7 +18,7 @@ jobs:
       - checkout 
       - run:
           name: maven install
-          command: mvn clean install -DskipTests
+          command: apt-get install maven
       - snyk/scan:
                 fail-on-issues: false
                 monitor-on-build: true
